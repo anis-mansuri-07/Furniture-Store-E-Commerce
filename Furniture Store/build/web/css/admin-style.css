@@ -1,0 +1,133 @@
+/* Admin Dashboard Styles */
+.bg-soft-gray {
+    background-color: #F8F9FA;
+}
+
+/* Sidebar Styles */
+aside {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 16rem;
+    background-color: white;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Navigation Links */
+nav a {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    color: #4B5563;
+}
+
+nav a:hover {
+    background-color: #F5F5DC;
+    color: #9B7E60;
+}
+
+/* Main Content Area */
+.main-content {
+    margin-left: 16rem;
+    min-height: 100vh;
+}
+
+/* Top Navbar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    background-color: #F8F9FA;
+    padding: 0.5rem 1rem;
+    width: 24rem;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -0.25rem;
+    right: -0.25rem;
+    background-color: #EF4444;
+    border-radius: 9999px;
+    width: 1rem;
+    height: 1rem;
+    font-size: 0.75rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Dashboard Cards */
+.metric-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+    padding: 1.5rem;
+}
+
+.metric-icon {
+    color: #9B7E60;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+/* Charts Section */
+.chart-container {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+    padding: 1.5rem;
+}
+
+/* Table Styles */
+.product-table {
+    min-width: 100%;
+}
+
+.table-header {
+    background-color: #F8F9FA;
+}
+
+.table-cell {
+    padding: 1rem 1.5rem;
+    text-align: left;
+}
+
+.product-row:hover {
+    background-color: #F8F9FA;
+}
+
+.status-badge {
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+}
+
+.status-badge.in-stock {
+    background-color: #DEF7EC;
+    color: #03543F;
+}
+
+.action-button {
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    transition: all 0.2s;
+}
+
+.action-button.edit {
+    color: #2563EB;
+}
+
+.action-button.edit:hover {
+    color: #1D4ED8;
+}
+
+.action-button.delete {
+    color: #DC2626;
+}
+
+.action-button.delete:hover {
+    color: #B91C1C;
+}

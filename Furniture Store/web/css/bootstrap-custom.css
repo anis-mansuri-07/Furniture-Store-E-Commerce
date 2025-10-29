@@ -1,0 +1,186 @@
+/* Bootstrap Custom Theme */
+:root {
+    /* Color System */
+    --bs-primary: #e67e22;
+    --bs-secondary: #2c3e50;
+    --bs-success: #2ecc71;
+    --bs-info: #3498db;
+    --bs-warning: #f1c40f;
+    --bs-danger: #e74c3c;
+    --bs-light: #f8f9fa;
+    --bs-dark: #1a1a1a;
+    
+    /* Gray Scale */
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+
+    /* Spacing */
+    --bs-spacer: 1rem;
+    --bs-spacer-x2: 2rem;
+    --bs-spacer-x3: 3rem;
+    --bs-spacer-x4: 4rem;
+    --bs-spacer-x5: 5rem;
+}
+
+/* Typography */
+.display-1 { font-size: 4.5rem; font-weight: 800; line-height: 1.2; }
+.display-2 { font-size: 4rem; font-weight: 800; line-height: 1.2; }
+.display-3 { font-size: 3.5rem; font-weight: 800; line-height: 1.2; }
+.display-4 { font-size: 3rem; font-weight: 800; line-height: 1.2; }
+.display-5 { font-size: 2.5rem; font-weight: 800; line-height: 1.2; }
+.display-6 { font-size: 2rem; font-weight: 800; line-height: 1.2; }
+
+/* Buttons */
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-lg {
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+}
+
+.btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+}
+
+.btn-primary {
+    background: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-primary:hover {
+    background: #d35400;
+    border-color: #d35400;
+    transform: translateY(-2px);
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+/* Forms */
+.form-control {
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid var(--bs-gray-200);
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 0.25rem rgba(230, 126, 34, 0.25);
+}
+
+.form-label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--bs-gray-700);
+}
+
+/* Badges */
+.badge {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-weight: 600;
+}
+
+/* Utilities */
+.shadow-sm { box-shadow: 0 2px 8px rgba(0,0,0,0.05) !important; }
+.shadow { box-shadow: 0 5px 15px rgba(0,0,0,0.08) !important; }
+.shadow-lg { box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important; }
+
+.rounded-xl { border-radius: 1rem !important; }
+.rounded-xxl { border-radius: 2rem !important; }
+
+/* Backgrounds */
+.bg-gradient-primary {
+    background: linear-gradient(135deg, var(--bs-primary), #f39c12) !important;
+}
+
+.bg-gradient-dark {
+    background: linear-gradient(135deg, var(--bs-gray-800), var(--bs-gray-900)) !important;
+}
+
+/* Text */
+.text-gradient {
+    background: linear-gradient(135deg, var(--bs-primary), #f39c12);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Borders */
+.border-dashed { border-style: dashed !important; }
+.border-2 { border-width: 2px !important; }
+.border-3 { border-width: 3px !important; }
+.border-4 { border-width: 4px !important; }
+
+/* Hover Effects */
+.hover-lift {
+    transition: transform 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+}
+
+.hover-shadow {
+    transition: box-shadow 0.3s ease;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1199.98px) {
+    .display-1 { font-size: 4rem; }
+    .display-2 { font-size: 3.5rem; }
+    .display-3 { font-size: 3rem; }
+    .display-4 { font-size: 2.5rem; }
+    .display-5 { font-size: 2rem; }
+    .display-6 { font-size: 1.75rem; }
+}
+
+@media (max-width: 991.98px) {
+    .display-1 { font-size: 3.5rem; }
+    .display-2 { font-size: 3rem; }
+    .display-3 { font-size: 2.5rem; }
+    .display-4 { font-size: 2rem; }
+    .display-5 { font-size: 1.75rem; }
+    .display-6 { font-size: 1.5rem; }
+}
+
+@media (max-width: 767.98px) {
+    .display-1 { font-size: 3rem; }
+    .display-2 { font-size: 2.5rem; }
+    .display-3 { font-size: 2rem; }
+    .display-4 { font-size: 1.75rem; }
+    .display-5 { font-size: 1.5rem; }
+    .display-6 { font-size: 1.25rem; }
+} 

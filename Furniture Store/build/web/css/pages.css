@@ -1,0 +1,324 @@
+/* Contact Page Styles */
+.contact-hero {
+    position: relative;
+    padding: 8rem 0 12rem;
+    background: linear-gradient(135deg, var(--bs-primary), #f39c12);
+    overflow: hidden;
+}
+
+.contact-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/images/pattern.svg') center/cover;
+    opacity: 0.1;
+}
+
+.contact-card {
+    margin-top: -8rem;
+    background: #fff;
+    border-radius: 2rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.contact-info {
+    padding: 3rem;
+    background: linear-gradient(135deg, var(--bs-gray-800), var(--bs-gray-900));
+    color: #fff;
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    background: rgba(255,255,255,0.1);
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.contact-info-item:hover {
+    transform: translateX(10px);
+    background: rgba(255,255,255,0.2);
+}
+
+.contact-info-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bs-primary);
+    border-radius: 1rem;
+    margin-right: 1.5rem;
+}
+
+.contact-form {
+    padding: 3rem;
+}
+
+.contact-form .form-floating {
+    margin-bottom: 1.5rem;
+}
+
+.contact-map {
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin-top: 4rem;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    filter: grayscale(0.6);
+    transition: filter 0.3s ease;
+}
+
+.contact-map:hover iframe {
+    filter: grayscale(0);
+}
+
+/* About Page Styles */
+.about-hero {
+    position: relative;
+    padding: 8rem 0;
+    background: linear-gradient(135deg, var(--bs-gray-800), var(--bs-gray-900));
+    color: #fff;
+    overflow: hidden;
+}
+
+.about-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/images/pattern.svg') center/cover;
+    opacity: 0.1;
+}
+
+.about-experience {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--bs-primary);
+    border-radius: 50%;
+    margin: 2rem auto;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin: 4rem 0;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(230, 126, 34, 0.15);
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--bs-primary), #f39c12);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+}
+
+.about-values {
+    padding: 6rem 0;
+    background: var(--bs-gray-100);
+}
+
+.value-card {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #fff;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(230, 126, 34, 0.15);
+}
+
+.value-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bs-primary);
+    border-radius: 1.5rem;
+    margin: 0 auto 2rem;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.team-section {
+    padding: 6rem 0;
+}
+
+.team-card {
+    position: relative;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(230, 126, 34, 0.15);
+}
+
+.team-image {
+    position: relative;
+    padding-top: 100%;
+}
+
+.team-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: #fff;
+    transform: translateY(100%);
+    transition: all 0.3s ease;
+}
+
+.team-card:hover .team-info {
+    transform: translateY(0);
+}
+
+.team-social {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.team-social a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.team-social a:hover {
+    background: var(--bs-primary);
+    transform: translateY(-3px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+    .contact-card {
+        margin-top: -6rem;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 2rem;
+    }
+
+    .about-experience {
+        width: 150px;
+        height: 150px;
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
+    }
+
+    .value-card {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .contact-hero,
+    .about-hero {
+        padding: 6rem 0;
+    }
+
+    .contact-card {
+        margin-top: -4rem;
+    }
+
+    .contact-info-item {
+        padding: 1rem;
+    }
+
+    .contact-info-icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 1rem;
+    }
+
+    .contact-map {
+        height: 300px;
+        margin-top: 2rem;
+    }
+
+    .about-stats {
+        gap: 1rem;
+    }
+
+    .stat-card {
+        padding: 1.5rem;
+    }
+
+    .value-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+} 
